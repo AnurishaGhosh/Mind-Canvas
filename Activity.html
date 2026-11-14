@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MindCanvas Activity</title>
+<link rel="stylesheet" href="../static/Activity.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="menu-item">
+    <img src="../static/../static/icon1.png" class="icon">
+    <span><h2>MindCanvas</h2></span>
+    </div>
+
+    
+
+<button onclick="location.href='/dashboard'"><b><img src="../static/../static/icon2.png" height="15px" width="15px"><span> <span> Dashboard</span></span></b></button>
+<button onclick="location.href='/journal'"><b><img src="../static/../static/icon3.png" height="12px" width="13px"><span> <span> Journal</span></span></b></button>
+<button onclick="location.href='/entries'"><b><img src="../static/../static/icon4.png" height="13px" width="11px"><span> <span> Entries</span></span></b></button>
+<button onclick="location.href='/moodtracker'"><b><img src="../static/../static/icon5.png" height="13px" width="15px"><span> <span> Mood Tracker</span></span></b></button>
+<button onclick="location.href='/insights'"><b><img src="../static/../static/icon6.png" height="13px" width="15px"><span> <span> Insights</span></span></b></button>
+<button onclick="location.href='/resources'"><b><img src="../static/../static/icon7.png" height="13px" width="15px"><span> <span> Resources</span></span></b></button>
+<button onclick="location.href='/activity'"><b><img src="../static/../static/icon5.png" height="13px" width="15px"><span> <span> Activity</span></span></b></button>
+<button onclick="location.href='/settings'"><b><img src="../static/../static/icon9.png" height="13px" width="13px"><span> <span> Settings</span></span></b></button>
+<button onclick="location.href='/chatbot'" style="padding-bottom: 30px;"><b><img src="../static/Eva pp2.png" height="30px" width="30px" style="position: relative; top: -6px"><span> <span style="position: relative; top: -15px;"> chatbot</span></span></b></button>
+
+
+</div>
+
+<div class="topbar">
+<div class="act"> 
+    <h1>✨ Wellness Activities</h1>
+</div> 
+<div class="topbar-right">
+    <div class="menu-item" style="padding-bottom: 50px;">
+    <button class="log"><b>💬Help & Support </b></button>
+    </div>
+    <div class="menu-item">
+     <button class="log"><span><b>↪️ Log Out</b></span></button>
+    </div>
+                <div id="currentDate" style="padding-top: 20px;"></div>
+                <div class="profile">
+                    <img id="profilePic" src="../static/profile.png" style="background-color: white;">
+                    <span id="userName" style="padding-bottom: 1px;">Ms. X</span>
+                </div>
+
+ </div>
+</div>
+
+
+<div class="main-content">
+<p class="subtitle">Small actions can create positive change 🌈</p>
+
+
+<div class="activity-container">
+<div class="card">
+<div class="iconss">🧘</div>
+<h2>5 Min Meditation</h2>
+
+<p>Sit quietly, close your eyes and focus on breathing.</p>
+
+<button class="activity-btn" id="meditationBtn">
+Start
+</button>
+</div>
+
+
+
+<div class="card">
+<div class="iconss">📖</div>
+
+<h2>Gratitude Journal</h2>
+
+<p>Write 3 things you are thankful for.</p>
+
+<button class="activity-btn">Begin</button>
+
+</div>
+
+
+
+<div class="card">
+<div class="iconss">🚶</div>
+<h2>Short Walk</h2>
+
+<p>Take a 10-minute walk and relax.</p>
+
+<button class="activity-btn">Start</button>
+
+</div>
+
+
+
+<div class="card">
+<div class="iconss">💪</div>
+<h2>Workout</h2>
+<p>3 sets of pushups,squats and planks.</p>
+<button class="activity-btn">Begin</button>
+</div>
+
+
+
+
+<div class="card">
+<div class="iconss">💧</div>
+
+<h2>Hydration Check</h2>
+
+<p>Drink water and stay refreshed.</p>
+
+<p id="waterText">
+8 glasses of water left 💧 
+</p>
+
+<button class="activity-btn" id="waterBtn">
+1 Glass of water done! 😊 
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="iconss">😴</div>
+
+<h2>Sleep Tracker</h2>
+<p>Enter how many hours you slept last night.</p>
+<input type="number" id="sleepHours" min="0" max="24" step="0.5" placeholder="e.g. 7.5" >           
+<p id="sleepFeedback"></p>
+<button class="activity-btn" id="sleepBtn">Save Sleep</button>
+</div>
+<div class="card">
+<div class="iconss">🍽  </div>
+<h2> Daily Food Schedule</h2>
+<p>Track your today's on time</p>
+<p id="foodStatus">No meals completed yet</p>
+<p style="font-size: 12px;">🌅Breakfast 7:00 AM – 9:00 AM <br> 🌞 Lunch  1:00 PM – 2:00 PM <br>🌆 Evening Snack 5:00 PM – 6:00 PM <br>🌙 Dinner 8:00 PM – 9:30 PM </p>
+<div class="food-buttons">
+<button class="activity-btn" id="breakfastBtn">🌅 Breakfast</button>
+<button class="activity-btn" id="lunchBtn">🌞 Lunch</button>
+<button class="activity-btn" id="snackBtn">🌆 Evening Snack</button>
+<button class="activity-btn" id="dinnerBtn">🌙 Dinner</button>
+</div>
+</div>
+
+<div class="card">
+  <div class="iconss">😇</div>
+  <h2>Me Time</h2>
+  <p>Disconnect from screens. Do something that brings you pure joy.</p>
+  <button class="activity-btn" id="meTimeBtn">Start Session</button>
+</div>
+
+
+
+</div>
+<div class="progress">
+
+<h2>Today's Progress</h2>
+
+<div class="bar">
+
+<div class="fill">60%</div>
+
+
+
+<p>3 of 5 activities completed</p>
+
+</div>
+</div>
+
+
+
+<script src="../static/Activity.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>MindCanvas Mood Tracker</title>
+<link rel="stylesheet" href="../static/Mood Tracker.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="menu-item">
+    <img src="../static/icon1.png" class="icon">
+    <span><h2>MindCanvas</h2></span>
+    </div>
+
+    
+
+<button onclick="location.href='/dashboard'"><b><img src="../static/icon2.png" height="15px" width="15px"><span> <span> Dashboard</span></span></b></button>
+<button onclick="location.href='/journal'"><b><img src="../static/icon3.png" height="12px" width="13px"><span> <span> Journal</span></span></b></button>
+<button onclick="location.href='/entries'"><b><img src="../static/icon4.png" height="13px" width="11px"><span> <span> Entries</span></span></b></button>
+<button onclick="location.href='/moodtracker'"><b><img src="../static/icon5.png" height="13px" width="15px"><span> <span> Mood Tracker</span></span></b></button>
+<button onclick="location.href='/insights'"><b><img src="../static/icon6.png" height="13px" width="15px"><span> <span> Insights</span></span></b></button>
+<button onclick="location.href='/resources'"><b><img src="../static/icon7.png" height="13px" width="15px"><span> <span> Resources</span></span></b></button>
+<button onclick="location.href='/activity'"><b><img src="../static/icon8.png" height="13px" width="15px"><span> <span> Activity</span></span></b></button>
+<button onclick="location.href='/settings'"><b><img src="../static/icon9.png" height="13px" width="13px"><span> <span> Settings</span></span></b></button>
+<button onclick="location.href='/chatbot'" style="padding-bottom: 30px;"><b><img src="../static/Eva pp2.png" height="30px" width="30px" style="position: relative; top: -6px"><span> <span style="position: relative; top: -15px;"> chatbot</span></span></b></button>
+
+
+
+<div class="topbar">
+        <div class="mood"><h1>📉 Mood Tracker</h1></div> 
+        <div class="topbar-right">
+            <button class="log"><b>💬Help & Support </b></button>
+            <button class="log"><span><b>↪️ Log Out</b></span></button>
+            <div id="currentDate"></div>
+            <div class="profile"><img id="profilePic" src="../static/profile.png" style="background-color: white;"><span id="userName" style="padding-bottom: 1px;">Ms. X</span></div>
+            </div>
+    </div>
+</div>
+
+
+<div class="main-content">
+<h3 style="font-size: 20px;">How are you feeling now? 🤔</h3>
+<form style="font-size: 20px;">
+<input type="radio" name="mood">
+<label>😊 Happy</label>
+<br><br>
+<input type="radio" name="mood">
+<label>😐 Neutral</label>
+<br><br>
+<input type="radio" name="mood">
+<label>😔 Sad</label>
+<br><br>
+<input type="radio" name="mood">
+<label>😡 Angry</label>
+<br><br>
+<input type="radio" name="mood">
+<label>😴 Tired</label>
+<br><br><br>
+<button type="submit" class="save-btn">Save Mood</button>
+</form>
+<br><br>
+<hr><br><br>
+<h3>Today's Selected Mood:</h3>
+<p>No mood selected yet.</p>
+</div>
+
+<script src="../static/Mood Tracker.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCanvas AI Assistant</title>
+
+    <link rel="stylesheet" href="../static/chatbot.css">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <!-- Header -->
+        <div class="chat-header">
+
+            <div class="header-left">
+                <div>
+                    <img src="../static/icon1.png" alt="logo" style="height: 50px; width: 50px;">
+                </div>
+                <div>
+                    <h3>MindCanvas</h3> 
+                </div>
+
+                <div>
+                    <h1 style="padding-left: 500px; font-family: 'Times New Roman', Times, serif;">Eva</h1>
+                    <p style="padding-left: 435px;">Your Mental Wellness Assistant</p>
+                </div>
+            </div>
+
+            <div class="header-right">
+                    <button onclick="location.href='/dashboard'"><img src="../static/icon2.png" alt="Home" style="height: 30px; width: 30px; padding-bottom: 5px;"></button>
+                    <button id="clearChat" style="color: white;"><img src="../static/clearchat.png" alt="clearChat" style="height: 25px; width: 25px;"></button>
+                    <div class="profile">
+                    <img id="profilePic" src="../static/profile.png" alt="User" style="background-color: white;">
+                    <span id="userName">Ms. X</span>
+                    </div>
+            </div>
+
+        </div>
+
+        <!-- Chat Area -->
+        <div class="chat-box" id="chatBox">
+
+            <div class="bot-message">
+
+                <div class="avatar">
+                    <img src="../static/Eva pp.png" alt="Eva" style="height: 80px;">
+                </div>
+                <div></div>
+
+                <div class="message">
+                    👋 Hello! I'm <strong>Eva</strong>.<br><br>
+
+                    I can help you:
+                    <br><br>
+                    💙 Understand your mood<br>
+                    📖 Reflect on journal entries<br>
+                    🌿 Suggest wellness activities<br>
+                    📊 Explain your reports<br>
+                    💬 Answer mental wellness questions
+                </div>
+
+            </div>
+
+        </div>
+
+       <!-- Thinking -->
+<div id="typing" class="thinking" style="display:none;">
+    💭 Eva is thinking...
+</div>
+
+        <!-- Input -->
+        <div class="chat-input">
+
+            <textarea
+                id="userInput"
+                rows="1"
+                placeholder="Type your message here..."></textarea>
+
+            <button id="sendBtn">
+                <img src="../static/icon11.png" alt="Send" style="height: 25px; margin-top: 5px;">
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="../static/chatbot.js"></script>
+
+</body>
+
+</html>

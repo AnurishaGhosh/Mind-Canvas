@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>MindCanvas Dashboard</title>
+<link rel="stylesheet" href="../static/dashboard.css">
+</head>
+
+<body>
+
+
+<div class="sidebar">
+
+    <div class="menu-item">
+    <img src="../static/icon1.png" class="icon">
+    <span><h2>MindCanvas</h2></span>
+    </div>   
+
+
+    
+
+<button onclick="location.href='/dashboard'"><b><img src="../static/icon2.png" height="15px" width="15px"><span> <span> Dashboard</span></span></b></button>
+<button onclick="location.href='/journal'"><b><img src="../static/icon3.png" height="12px" width="13px"><span> <span> Journal</span></span></b></button>
+<button onclick="location.href='/entries'"><b><img src="../static/icon4.png" height="13px" width="11px"><span> <span> Entries</span></span></b></button>
+<button onclick="location.href='/moodtracker'"><b><img src="../static/icon5.png" height="13px" width="15px"><span> <span> Mood Tracker</span></span></b></button>
+<button onclick="location.href='/insights'"><b><img src="../static/icon6.png" height="13px" width="15px"><span> <span> Insights</span></span></b></button>
+<button onclick="location.href='/resources'"><b><img src="../static/icon7.png" height="13px" width="15px"><span> <span> Resources</span></span></b></button>
+<button onclick="location.href='/activity'"><b><img src="../static/icon8.png" height="13px" width="15px"><span> <span> Activity</span></span></b></button>
+<button onclick="location.href='/settings'"><b><img src="../static/icon9.png" height="13px" width="13px"><span> <span> Settings</span></span></b></button>
+<button onclick="location.href='/chatbot'" style="padding-bottom: 30px;"><b><img src="../static/Eva pp2.png" height="30px" width="30px" style="position: relative; top: -6px"><span> <span style="position: relative; top: -15px;"> chatbot</span></span></b></button>
+
+
+
+</div>
+
+
+
+
+<div class="main">
+<div class="topbar">
+<div class="dash"> 
+    <h1><img src="../static/icon10.png" style="font-size: 20px; height: 30px; width: 30px;"><span> Dashboard</span></h1>
+</div> 
+<div class="topbar-right">
+    <div class="menu-item">
+    <button class="log"><b>💬Help & Support </b></button>
+    </div>
+    <div class="menu-item">
+     <button class="log"><span><b>↪️ Log Out</b></span></button>
+    </div>
+                <div id="currentDate" style="padding-top:20px;"></div>
+
+                <div class="profile">
+                    <img id="profilePic" src="../static/profile.png" style="background-color: white;">
+                    <span id="userName">Ms. X</span>
+                </div>
+
+ </div>
+</div>
+
+
+<div style="padding-bottom: 0px;"></div>
+
+
+<div class="main">
+<h1 style="color: rgb(160, 0, 0); padding-top: 0px; font-size: 50px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+👋 Welcome Back
+</h1>
+<p style="color: #222222;" >
+Track your thoughts, health and progress 🤓
+</p>
+<div class="dashboard-grid">
+<div class="card">
+<h2>
+😊 Today's Mood
+</h2>
+<h3>
+Feeling Calm
+</h3>
+<p>
+Your mood improved by 10%
+this week
+</p>
+</div>
+<div class="card">
+<h2>
+📖 Journal Entries
+</h2>
+<h3>
+48 Entries
+</h3>
+<p>
+Last entry:
+Productive Day
+</p>
+</div>
+<div class="card">
+<h2>
+🏃 Workout
+</h2>
+<h3>
+45 min
+</h3>
+<p>
+Today's goal completed
+</p>
+</div>
+<div class="card">
+<h2>
+🍽 Food Tracker
+</h2>
+<p>
+✔ Breakfast
+✔ Lunch
+⏳ Dinner
+</p>
+</div>
+<div class="card">
+<h2>
+🔥 Daily Streak
+</h2>
+<h3>
+14 Days
+</h3>
+<p>
+Keep your momentum going
+</p>
+</div>
+<div class="card">
+<h2>
+💧 Water Intake
+</h2>
+<h3>
+6 / 8 Glasses
+</h3>
+<p>
+Stay hydrated
+</p>
+</div>
+<div class="card">
+    <br><br><br>
+<h2>
+📊 Weekly Progress
+</h2>
+<div class="progress">
+<div class="fill">
+75%
+</div>
+</div>
+</div>
+<div class="card">
+<h2>
+✨ Quick Actions
+</h2>
+<button>
+New Journal
+</button>
+<button>
+Track Mood
+</button>
+<button>
+Start Workout
+</button>
+</div>
+<div class="card">
+    <br><br> 
+<div class="glass-circle">
+        <svg class="pulse-svg" viewBox="0 0 70 40">
+            <polyline
+                points="0,20 15,20 22,5 30,35 40,15 50,25 60,20 70,20"/>
+        </svg>
+    </div>
+    <script src="../static/dashboard.js"></script>
+</div>
+</div>
+
+</body>
+</html>
+

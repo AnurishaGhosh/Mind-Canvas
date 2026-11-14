@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MindCanvas Insights</title>
+<link rel="stylesheet" href="../static/Insights.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="menu-item">
+    <img src="../static/../static/icon1.png" class="icon">
+    <span><h2>MindCanvas</h2></span>
+    </div>
+
+    
+
+<button onclick="location.href='/dashboard'"><b><img src="../static/icon2.png" height="15px" width="15px"><span> <span> Dashboard</span></span></b></button>
+<button onclick="location.href='/journal'"><b><img src="../static/icon3.png" height="12px" width="13px"><span> <span> Journal</span></span></b></button>
+<button onclick="location.href='/entries'"><b><img src="../static/icon4.png" height="13px" width="11px"><span> <span> Entries</span></span></b></button>
+<button onclick="location.href='/moodtracker'"><b><img src="../static/icon5.png" height="13px" width="15px"><span> <span> Mood Tracker</span></span></b></button>
+<button onclick="location.href='/insights'"><b><img src="../static/icon6.png" height="13px" width="15px"><span> <span> Insights</span></span></b></button>
+<button onclick="location.href='/resources'"><b><img src="../static/icon7.png" height="13px" width="15px"><span> <span> Resources</span></span></b></button>
+<button onclick="location.href='/activity'"><b><img src="../static/icon8.png" height="13px" width="15px"><span> <span> Activity</span></span></b></button>
+<button onclick="location.href='/settings'"><b><img src="../static/icon9.png" height="13px" width="13px"><span> <span> Settings</span></span></b></button>
+<button onclick="location.href='/chatbot'" style="padding-bottom: 30px;"><b><img src="../static/Eva pp2.png" height="30px" width="30px" style="position: relative; top: -6px"><span> <span style="position: relative; top: -15px;"> chatbot</span></span></b></button>
+
+
+</div>
+
+
+<div class="topbar">
+        <div class="ins"><h1> 📊 Insights</h1></div>
+        <div class="topbar-right">
+            <button class="log"><b>💬Help & Support </b></button>
+            <button class="log"><span><b>↪️ Log Out</b></span></button>
+            <div id="currentDate"></div>
+            <div class="profile"><img id="profilePic" src="../static/profile.png" style="background-color: white;"><span id="userName" style="padding-bottom: 1px;">Ms. X</span></div>
+        </div>
+</div>
+
+
+
+<div class="main-content">
+<p class="note">Your mental wellness summary 🤗</p>
+<div class="cards">
+<div class="card">
+    <h2>📈 Mood Trend</h2>
+
+    <canvas id="moodChart"
+            width="300"
+            height="200"></canvas>
+
+</div>
+<div class="card">
+<h2>😊 Most Common Mood</h2>
+<h1 id="commonMood">Loading...</h1>
+<p id="commonMoodCount"></p>
+</div>
+<div class="card">
+<h2>🔥 Current Streak</h2>
+<h1 id="streakCard">Loading...</h1>
+<p id="streakText">Loading...</p>
+</div>
+<div class="card">
+    <h2>🧘 Suggested Activity</h2>
+
+    <p id="suggestionText">Loading...</p>
+
+    <button id="activityButton"
+            onclick="startActivity()">
+        Loading...
+    </button>
+</div>
+<div class="card journal-card">
+    <h2>📝 Weekly Mental Health Report</h2>
+
+    <canvas id="journalChart"></canvas>
+</div>
+<div class="card">
+    <h2>💙 Wellness Score</h2>
+
+    <h1 id="wellnessScore">82%</h1>
+
+    <div class="progress">
+        <div class="fill" id="wellnessFill"></div>
+    </div>
+
+    <p id="wellnessText">Your wellness improved by 12% this week.</p>
+</div>
+</div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  //load the chart.js library
+<script src="../static/Insights.js"></script>
+
+</body>
+</html>

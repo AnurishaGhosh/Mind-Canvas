@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../static/style.css">
+
+<title>Login</title>
+</head>
+
+<body>
+<div class="login-box">
+<img src="../static/icon1.png" class="logo">
+<h1>MindCanvas</h1>
+<p> Welcome back </p>
+<input type="Name" id="Name" placeholder="Name" style="display:none;">
+<input type="email" id="email" placeholder="Email">
+<input type="password" id="password" placeholder="Password">
+
+<select type="Gender" id="Gender" placeholder="Gender" style="display:none;">
+<option value="">Select Gender</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+</select>
+
+<br><br>
+
+<button id="actionBtn" onclick="login()"> Login </button>
+<p class="extra" id="switch"> Don't have an account? <a href="#" onclick="signupMode()"> Sign Up </a> </p>
+
+</div>
+</body>
+</html>
+
+
+<script src="../static/script.js"></script>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MindCanvas Settings</title>
+<link rel="stylesheet" href="../static/Settings.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="menu-item">
+    <img src="../static/icon1.png" class="icon">
+    <span><h2>MindCanvas</h2></span>
+    </div>
+
+    
+
+<button onclick="location.href='/dashboard'"><b><img src="../static/icon2.png" height="15px" width="15px"><span> <span> Dashboard</span></span></b></button>
+<button onclick="location.href='/journal'"><b><img src="../static/icon3.png" height="12px" width="13px"><span> <span> Journal</span></span></b></button>
+<button onclick="location.href='/entries'"><b><img src="../static/icon4.png" height="13px" width="11px"><span> <span> Entries</span></span></b></button>
+<button onclick="location.href='/moodtracker'"><b><img src="../static/icon5.png" height="13px" width="15px"><span> <span> Mood Tracker</span></span></b></button>
+<button onclick="location.href='/insights'"><b><img src="../static/icon6.png" height="13px" width="15px"><span> <span> Insights</span></span></b></button>
+<button onclick="location.href='/resources'"><b><img src="../static/icon7.png" height="13px" width="15px"><span> <span> Resources</span></span></b></button>
+<button onclick="location.href='/activity'"><b><img src="../static/icon8.png" height="13px" width="15px"><span> <span> Activity</span></span></b></button>
+<button onclick="location.href='/settings'"><b><img src="../static/icon9.png" height="13px" width="13px"><span> <span> Settings</span></span></b></button>
+<button onclick="location.href='/chatbot'" style="padding-bottom: 30px;"><b><img src="../static/Eva pp2.png" height="30px" width="30px" style="position: relative; top: -6px"><span> <span style="position: relative; top: -15px;"> chatbot</span></span></b></button>
+
+</div>
+
+<div class="topbar">
+        <div class="set"><h1>🛠️ Settings</h1></div>
+        <div class="topbar-right">
+            <button class="log"><b>💬Help & Support </b></button>
+            <button class="log"><span><b>↪️ Log Out</b></span></button>
+            <div id="currentDate" style="padding-top: 40px;"></div>
+            <div class="profile" style="font-size: 20px; padding-top: 0px;"><div style="margin-top: 30px;"> <img id="profilePic" src="../static/profile.png" style="background-color: white"></div><span id="userName" style="padding-top: 30px;">Ms. X</span></div>
+        </div>
+</div>
+
+<div class="main-content">
+<p class="subtitle">Customize your MindCanvas experience ✨</p>
+<br><br>
+<div class="settings-grid">
+<div class="card">
+<h2>👤 Profile</h2>
+<br>
+<input
+type="text"
+placeholder="Enter Name">
+<input
+type="email"
+placeholder="Enter Email">
+<br><br>
+<button>
+    
+Save Profile
+</button>
+</div>
+<div class="card">
+<h2>🎨 Appearance</h2>
+<br><br>
+<label>
+<input type="radio"
+name="theme">
+Dark Mode
+</label>
+<br><br>
+<label>
+<input type="radio"
+name="theme">
+Light Mode
+</label>
+</div>
+<div class="card">
+<h2>🔔 Notifications</h2>
+<br>
+<label>
+<input type="checkbox">
+Journal Reminder
+</label>
+<br>
+<label>
+<input type="checkbox">
+Workout Reminder
+</label>
+<br>
+<label>
+<input type="checkbox">
+Food Reminder
+</label>
+</div>
+<div class="card">
+<h2>🔒 Privacy</h2>
+<br>
+<label>
+<input type="checkbox">
+Private Entries
+</label>
+<br>
+<label>
+<input type="checkbox">
+Enable Lock
+</label>
+</div>
+<div class="card">
+<h2>💾 Data</h2>
+<br><br>
+<button>
+Export Entries
+</button>
+<br><br>
+<button>
+Clear Data
+</button>
+
+</div>
+<div class="card">
+<h2>🚪 Account</h2>
+<br><br>
+<button>
+Log Out
+</button>
+<br>
+<br>
+<button>
+Delete Account
+</button>
+</div>
+</div>
+</div>
+
+<script src="../static/Settings.js"></script>
+
+</body>
+</html>

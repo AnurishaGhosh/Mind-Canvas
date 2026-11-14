@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MindCanvas Resources</title>
+<link rel="stylesheet" href="../static/Resources.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="menu-item">
+    <img src="../static/icon1.png" class="icon">
+    <span><h2>MindCanvas</h2></span>
+    </div>
+
+<button onclick="location.href='/dashboard'"><b><img src="../static/icon2.png" height="15px" width="15px"><span> <span> Dashboard</span></span></b></button>
+<button onclick="location.href='/journal'"><b><img src="../static/icon3.png" height="12px" width="13px"><span> <span> Journal</span></span></b></button>
+<button onclick="location.href='/entries'"><b><img src="../static/icon4.png" height="13px" width="11px"><span> <span> Entries</span></span></b></button>
+<button onclick="location.href='/moodtracker'"><b><img src="../static/icon5.png" height="13px" width="15px"><span> <span> Mood Tracker</span></span></b></button>
+<button onclick="location.href='/insights'"><b><img src="../static/icon6.png" height="13px" width="15px"><span> <span> Insights</span></span></b></button>
+<button onclick="location.href='/resources'"><b><img src="../static/icon7.png" height="13px" width="15px"><span> <span> Resources</span></span></b></button>
+<button onclick="location.href='/activity'"><b><img src="../static/icon8.png" height="13px" width="15px"><span> <span> Activity</span></span></b></button>
+<button onclick="location.href='/settings'"><b><img src="../static/icon9.png" height="13px" width="13px"><span> <span> Settings</span></span></b></button>
+<button onclick="location.href='/chatbot'" style="padding-bottom: 30px;"><b><img src="../static/Eva pp2.png" height="30px" width="30px" style="position: relative; top: -6px"><span> <span style="position: relative; top: -15px;"> chatbot</span></span></b></button>
+
+</div>
+
+<div class="topbar">
+        <div class="res"><h1>📚 Resources</h1></div>
+        <div class="topbar-right">
+            <button class="log"><b>💬Help & Support </b></button>
+            <button class="log"><span><b>↪️ Log Out</b></span></button>
+            <div id="currentDate" style="padding-top: 40px;"></div>
+            <div class="profile" style="font-size: 20px; padding-top: 0px;"><div style="margin-top: 30px;"> <img id="profilePic" src="../static/profile.png" style="background-color: white"></div><span id="userName" style="padding-top: 30px;">Ms. X</span></div>
+        </div>
+</div>
+
+<div class="main-content">
+<p class="subtitle">Explore tools to improve your mental wellness 😃</p>
+<div class="resource-container">
+<div class="card">
+<div class="emoji">
+🧘
+</div>
+<h2>
+Mindful Breathing
+</h2>
+<p>
+Practice breathing exercises
+to reduce stress and stay calm.
+</p>
+<button onclick="openBreathing()">
+Open
+</button>
+</div>
+<div class="card">
+<div class="emoji">
+🎵
+</div>
+<h2>
+Relaxing Music
+</h2>
+<p>
+Listen to peaceful sounds
+for relaxation and focus.
+</p>
+<button onclick="playMusic()">
+Play
+</button>
+</div>
+<div class="card">
+<div class="emoji">
+📖
+</div>
+<h2>
+Daily Journal Tips
+</h2>
+<p>
+Ideas and prompts to help
+you express thoughts.
+</p>
+<button onclick="readJournalTips()">
+Read
+</button>
+</div>
+<div class="card">
+<div class="emoji">
+🌿
+</div>
+<h2>
+Stress Management
+</h2>
+<p>
+Simple techniques to
+manage everyday stress.
+</p>
+<button onclick="exploreStressManagement()">
+Explore
+</button>
+</div>
+<div class="card">
+<div class="emoji">
+💛
+</div>
+<h2>
+Positive Affirmations
+</h2>
+<p>
+Read uplifting messages
+to build confidence.
+</p>
+<button onclick="viewAffirmations()">
+View
+</button>
+</div>
+<div class="card">
+<div class="emoji">
+😴
+</div>
+<h2>
+Sleep Better
+</h2>
+<p>
+Healthy habits and tips
+for better sleep.
+</p>
+<button onclick="learnSleepTips()">
+Learn
+</button>
+</div>
+</div>
+</div>
+
+<script src="../static/Resource.js"></script>
+
+</body>
+</html>
