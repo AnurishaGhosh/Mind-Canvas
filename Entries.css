@@ -1,0 +1,336 @@
+
+body{
+margin:0;
+display:flex;
+background:#FFF8DC;
+color:white;
+font-family:Arial;
+}
+
+.sidebar{
+width:200px;
+background:#190426;
+padding:20px;
+height:700px;
+}
+
+.sidebar button{
+width:100%;
+height: 40px;
+margin:10px 0;
+padding:12px;
+background:#460161;
+border:none;
+color:white;
+border-radius:8px;
+text-decoration: none;
+}
+
+
+.sidebar button:hover{
+padding: 0%;
+background:#8a63ff;
+cursor:pointer;
+transform:scale(1.03);
+transition:.3s;
+}
+
+.icon{
+    padding-top: 10px;
+    width:50px;
+    height:50px;
+}
+
+.menu-item{
+    padding-left: 0px;
+    display:flex;
+    align-items:left;
+    gap:0px;
+    padding: 0px;
+}
+
+.main{
+padding:30px;
+flex:1;
+}
+
+.en{
+padding-bottom: 25px;
+font-size:25px;
+color: white;
+flex:1;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+padding:40px;
+flex:1;
+padding:30px;
+padding-top: 90px;
+padding-left: 30px;
+}
+
+.top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+input,
+select{
+
+    background:#190426;
+
+    border:none;
+
+    padding:12px;
+
+    color:white;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+button{
+background:#460161;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+cursor:pointer;
+}
+
+
+.entry{
+background-color: #190426;
+
+}
+
+
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:30px;
+}
+
+.box{
+background: #1a002b;
+    border-radius: 20px;
+    padding: 30px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.4),
+        0 20px 40px rgba(0,0,0,0.5),
+        0 35px 70px rgba(0,0,0,0.6),
+        0 0 20px rgba(255,255,255,0.1);
+}
+
+.box h2{
+color:#8d5eff;
+}
+
+.entry-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+    gap:25px;
+    margin-top:35px;
+    align-items:start;
+}
+
+.no-entry{
+    grid-column:1 / -1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:60vh;
+}
+
+.no-entry h2{
+    color:black;
+    font-size:32px;
+    margin:0;
+    text-align:center;
+}
+
+.entry-card{
+
+    background:#1a002b;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.35);
+
+    transition:.3s;
+
+}
+
+.entry-card:hover{
+transform:translateY(-6px);
+}
+
+.date{
+
+    color:#c4c4c4;
+
+    font-size:13px;
+
+    margin-bottom:12px;
+
+}
+
+.tag{
+padding:8px 14px;
+border-radius:20px;
+display:inline-block;
+margin-bottom:15px;
+}
+
+.happy{
+background:#00a437;
+}
+
+.calm{
+background:rgb(149, 149, 249);
+}
+
+.anxious{
+background:#d00303;
+}
+
+.entry-card h3{
+
+    color:#ffffff;
+
+    font-size:22px;
+
+    margin:12px 0;
+
+}
+
+.entry-card p{
+    line-height:1.7;
+    color:#bbb;
+    white-space:pre-wrap;
+    word-wrap:break-word;
+}
+
+.buttons{
+width:100%;
+height: 40px;
+display:flex;
+gap:10px;
+margin-top:20px;
+}
+
+.buttons button:hover{
+    background:#8a63ff;
+    transform:scale(1.03);
+    transition:.3s;
+}
+
+
+.buttons button{
+
+    flex:1;
+
+    background:#460161;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    padding:10px;
+
+    cursor:pointer;
+
+}
+
+
+
+.topbar{
+position:absolute;
+top:0;
+left:240px;
+height:70px;
+width: 1273px;
+background:#190426;
+display:flex;
+box-sizing:border-box;
+z-index:1000;
+align-items:center;
+padding-top: 30px;
+padding-bottom: 0px;
+color:white;
+}
+
+
+
+.topbar-right{
+padding-right: 15px;
+display:flex;
+gap:40px;
+}
+
+
+.log{
+    background-color: #460161;
+    color: white;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top:5px;
+    width: auto;
+}
+
+
+
+.log:hover{
+padding: 0%;
+background:#8a63ff;
+cursor:pointer;
+transform:scale(1.03);
+transition:.3s;
+}
+
+
+
+/* Profile */
+.profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding-top: 0px; 
+    padding-bottom: 15px;
+}
+
+.profile img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+
+
+
+
+.entry-grid h2{
+
+    color:black;
+
+    text-align:center;
+
+    grid-column:1 / -1;
+
+}

@@ -1,0 +1,296 @@
+body{
+margin:0;
+display:flex;
+background:#FFF8DC;
+color:white;
+font-family:Arial;
+}
+
+.sidebar{
+width:200px;
+background:#190426;
+padding:20px;
+height:auto;
+}
+
+.sidebar button{
+width:100%;
+height: 40px;
+margin:10px 0;
+padding:12px;
+background:#460161;
+border:none;
+color:white;
+border-radius:8px;
+text-decoration: none;
+}
+
+
+.sidebar button:hover{
+padding: 0%;
+background:#8a63ff;
+cursor:pointer;
+transform:scale(1.03);
+transition:.3s;
+}
+
+.icon{
+    padding-top: 10px;
+    width:50px;
+    height:50px;
+}
+
+.menu-item{
+    padding-left: 0px;
+    display:flex;
+    align-items:left;
+    gap:0px;
+    padding: 0px;
+}
+
+.main{
+padding:30px;
+flex:1;
+}
+
+.icon2{
+    width: 10px;
+    height: 10px;
+}
+
+
+.act{
+padding:30px;
+padding-top: 0px;
+font-size:20px;
+color: white;
+flex:1;
+font-family: Georgia, 'Times New Roman', Times, serif;}
+
+
+
+.main-content{
+padding:40px;
+flex:1;
+}
+
+
+.main-content h3{
+font-size:26px;
+color:#555;
+margin-bottom:25px;
+}
+
+/* Mood Card */
+
+form{
+background:white;
+padding:35px;
+width: 450px;
+border-radius:25px;
+box-shadow:0 10px 25pxrgba(0,0,0,.08);
+}
+
+
+label{
+font-size:22px;
+padding:12px 18px;
+display:inline-block;
+width:250px;
+border-radius:12px;
+transition:.3s;
+cursor:pointer;
+}
+
+
+.subtitle{
+color:#222222;
+margin-top:10px;
+padding-top: 100px;
+}
+
+
+.activity-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+    background: #1a002b;
+    border-radius: 20px;
+    padding: 30px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.4),
+        0 20px 40px rgba(0,0,0,0.5),
+        0 35px 70px rgba(0,0,0,0.6),
+        0 0 20px rgba(255,255,255,0.1);
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.icon{
+font-size:45px;
+margin-bottom:20px;
+}
+
+.card h2{
+margin-bottom:15px;
+}
+
+.card p{
+color:#bdbdbd;
+line-height:1.6;
+}
+
+button{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+border-radius:10px;
+background:#460161;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+opacity:0.9;
+background-color: #6c3cff;
+}
+
+
+.progress{
+margin-top:50px;
+background: #1a002b;
+box-shadow:
+0 8px 20px rgba(0,0,0,0.4),
+0 20px 40px rgba(0,0,0,0.5),
+0 35px 70px rgba(0,0,0,0.6),
+0 0 20px rgba(255,255,255,0.1);
+padding:30px;
+border-radius:20px;
+}
+
+.bar{
+height:18px;
+background:#1c2b44;
+border-radius:30px;
+margin-top:20px;
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+width:60%;
+background:#6c3cff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:12px;
+}
+
+.progress p{
+margin-top:15px;
+color:#bcbcbc;
+}
+
+.iconss {
+font-size: 80px;
+  text-align: center;      /* Centers the emoji horizontally */            /* Overrides any accidental height restrictions */
+}
+
+
+.topbar{
+position:absolute;
+top:0;
+left:240px;
+height:70px;
+width: 1273px;
+background:#190426;
+display:flex;
+box-sizing:border-box;
+z-index:1000;
+align-items:center;
+padding-top: 30px;
+padding-bottom: 0px;
+color:white;
+}
+
+
+
+.topbar-right{
+padding-right: 15px;
+display:flex;
+gap:40px;
+}
+
+
+
+.log{
+    background-color: #460161;
+    color: white;
+    font-size: 15px;
+    height: 8px;
+    width: 130px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-top: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+
+.log:hover{
+padding: 0%;
+background:#8a63ff;
+cursor:pointer;
+transform:scale(1.03);
+transition:.3s;
+}
+
+/* Profile */
+.profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding-top: 0px; 
+    padding-bottom: 15px;
+}
+
+.profile img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+
+
+
+#breakfastBtn{
+    font-size: 15px;
+    padding: 4px;
+    
+}
+
+#lunchBtn{
+    font-size: 15px;
+    padding: 4px;
+}
+
+#snackBtn{
+    font-size: 15px;
+    padding: 4px;
+}
+
+#dinnerBtn{
+    font-size: 15px;
+    padding: 4px;
+}

@@ -1,0 +1,311 @@
+
+body{
+margin:0;
+display:flex;
+background:#FFF8DC;
+color:white;
+font-family:Arial;
+}
+
+
+
+.sidebar{
+width:200px;
+background:#190426;
+padding:20px;
+height:auto;
+}
+
+.sidebar button{
+width:100%;
+height: 40px;
+margin:10px 0;
+padding:12px;
+background:#460161;
+border:none;
+color:white;
+border-radius:8px;
+text-decoration: none;
+}
+
+
+.sidebar button:hover{
+padding: 0%;
+background:#8a63ff;
+cursor:pointer;
+transform:scale(1.03);
+transition:.3s;
+}
+
+.icon{
+    padding-top: 10px;
+    width:50px;
+    height:50px;
+}
+
+.menu-item{
+    padding-left: 0px;
+    display:flex;
+    align-items:left;
+    gap:0px;
+    padding: 0px;
+}
+
+.main{
+padding:30px;
+flex:1;
+}
+
+
+.dash{
+padding:30px;
+padding-top: 0px;
+font-size:25px;
+color: white;
+flex:1;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.circle{
+width:150px;
+height:150px;
+background:#460161;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:40px;
+margin:auto;
+}
+
+.graph{
+display:flex;
+gap:15px;
+align-items:end;
+height:150px;
+}
+
+.bar{
+width:40px;
+background:#7a49ff;
+border-radius:10px;
+}
+
+.icon2{
+    width: 10px;
+    height: 10px;
+}
+
+
+
+.topbar{
+position:absolute;
+top:0;
+left:240px;
+height:70px;
+width: 1273px;
+background:#190426;
+display:flex;
+box-sizing:border-box;
+z-index:1000;
+align-items:center;
+padding-top: 30px;
+padding-bottom: 0px;
+color:white;
+}
+
+
+
+.topbar-right{
+padding-right: 15px;
+display:flex;
+gap:40px;
+}
+
+
+.log{
+    background-color: #460161;
+    color: white;
+    font-size: 15px;
+    height: 8px;
+    width: 130px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-top: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+
+
+.log:hover{
+padding: 0%;
+background:#8a63ff;
+cursor:pointer;
+transform:scale(1.03);
+transition:.3s;
+}
+
+/* Profile */
+.profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding-top: 0px; 
+    padding-bottom: 15px;
+}
+
+.profile img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+
+
+.main p{
+color:#bdbdbd;
+margin-top:10px;
+}
+
+.dashboard-grid{
+display:grid;
+grid-template-columns:
+repeat(3,1fr);
+gap:25px;
+margin-top:40px;
+
+}
+
+.card{
+    background: #1a002b;
+    border-radius: 20px;
+    padding: 30px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.4),
+        0 20px 40px rgba(0,0,0,0.5),
+        0 35px 70px rgba(0,0,0,0.6),
+        0 0 20px rgba(255,255,255,0.1);
+}
+.card h2{
+margin-bottom:15px;
+}
+
+.card h3{
+color:#8b63ff;
+margin-bottom:10px;
+}
+
+.progress{
+margin-top:20px;
+height:18px;
+background:#1d2b44;
+border-radius:20px;
+overflow:hidden;
+}
+
+.fill{
+width:75%;
+height:100%;
+background:#6c3cff;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+button{
+width:200px;
+height: 40px;
+margin:10px 0;
+padding:12px;
+background:#190426;
+border:none;
+color:white;
+border-radius:8px;
+text-decoration: none;
+text-align: center;
+}
+
+button:hover{
+padding: 0%;
+background:#8a63ff;
+cursor:pointer;
+transform:scale(1.03);
+transition:.3s;
+}
+
+/* Glass Orb */
+.glass-circle{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    left: 65px;
+
+
+
+    background:radial-gradient(
+        circle at 30% 30%,
+        rgba(255,255,255,0.35),
+        rgba(255,255,255,0.08) 40%,
+        rgba(255,255,255,0.03) 70%,
+        rgba(0,0,0,0.12)
+    );
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    box-shadow:
+        inset 10px 10px 20px rgba(255,255,255,0.15),
+        inset -10px -10px 20px rgba(0,0,0,0.2),
+        0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Reflection */
+.glass-circle::before{
+    content:"";
+    position:absolute;
+
+    width:60px;
+    height:30px;
+
+    top:20px;
+    left:100px;
+
+    background:rgba(255,255,255,0.6);
+    border-radius:50%;
+
+    filter:blur(10px);
+}
+
+
+.pulse-svg polyline{
+    fill:none;
+    stroke:#ff6a00;
+    stroke-width:4;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+
+    filter:
+        drop-shadow(0 0 5px #ff6a00)
+        drop-shadow(0 0 15px #ff6a00);
+
+    stroke-dasharray:120;
+    stroke-dashoffset:120;
+}
+
+.pulse-svg{
+    width:100%;
+    height:100%;
+    display:block;
+}
